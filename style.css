@@ -7,7 +7,6 @@
 ::-webkit-scrollbar {
   display: none;
 }
-
 body {
   background-color: black;
   color: white;
@@ -46,7 +45,7 @@ a {
   margin: 5vmin;
   letter-spacing: 1px;
   font-weight: 700;
-  font-size: 1.5em;
+  font-size: 25px;
 }
 .links {
   display: flex;
@@ -58,13 +57,12 @@ a {
 .main_content {
   color: white;
 }
-
 .text-area {
   position: absolute;
   bottom: 19vmin;
   left: 10vmin;
   height: 100px;
-  width: 400px;
+  width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,12 +71,12 @@ a {
 }
 .recent {
   font-weight: 200;
-  font-size: 1.4rem;
+  font-size: 24px;
   text-shadow: 0 0 30px rgba(0, 0, 0, 1);
 }
 .rocket {
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 48px;
   text-shadow: 0 0 30px rgba(0, 0, 0, 1);
 }
 .rewatch {
@@ -95,16 +93,6 @@ a {
 .fade {
   animation: fadeIn 2s 2s both;
 }
-@keyframes fadeIn {
-  from {
-    transform: translateY(100px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
 .icon {
   text-align: center;
 }
@@ -115,16 +103,6 @@ a {
   bottom: 20px;
   animation: float 1s alternate ease-in-out infinite;
 }
-
-@keyframes float {
-  50% {
-    opacity: 0.8;
-  }
-  100% {
-    transform: translateY(-20px);
-  }
-}
-
 .sec_page {
   background-image: url("Images/2nd\ page.jpg");
   background-size: cover;
@@ -148,9 +126,34 @@ a {
   flex-direction: column;
   gap: 2vmin;
   text-transform: uppercase;
+  opacity: 0;
 }
+
+/* Keyframes */
+
 @keyframes fade {
   to {
     opacity: 1;
   }
 }
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+/* Media Queries */
