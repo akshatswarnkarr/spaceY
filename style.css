@@ -1,4 +1,6 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@100;200;400&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@100;200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&display=swap");
+
 * {
   margin: 0;
   font-family: Poppins;
@@ -107,7 +109,7 @@ a {
   background-image: url("Images/2nd\ page.jpg");
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: calc(100vh - 60px);
   width: 100vw;
   display: flex;
   align-items: flex-end;
@@ -128,7 +130,18 @@ a {
   text-transform: uppercase;
   opacity: 0;
 }
-
+.footer {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+.spacey {
+  font-weight: 200;
+}
 /* Keyframes */
 
 @keyframes fade {
