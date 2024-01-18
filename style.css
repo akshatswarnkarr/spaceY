@@ -48,6 +48,7 @@ a {
   letter-spacing: 1px;
   font-weight: 700;
   font-size: 25px;
+  transition: all 0.3s ease;
 }
 .links {
   display: flex;
@@ -170,3 +171,18 @@ a {
   }
 }
 /* Media Queries */
+
+@media (max-width: 767px) {
+  .links a,
+  .heading,
+  .rewatch {
+    font-size: 0.9rem;
+  }
+
+  .rocket {
+    font-size: 36px;
+  }
+  .recent {
+    font-size: 20px;
+  }
+}
