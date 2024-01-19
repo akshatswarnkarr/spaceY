@@ -6,7 +6,7 @@ let sections = document.querySelectorAll(".section");
 let boxes = document.querySelectorAll(".box");
 
 const options = {
-  rootMargin: "-200px",
+  rootMargin: "-100px",
 };
 
 const animate = new IntersectionObserver((entries, observer) => {
