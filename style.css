@@ -110,7 +110,7 @@ a {
   background-image: url("Images/2nd\ page.jpg");
   background-size: cover;
   background-position: center;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 100px);
   width: 100vw;
   display: flex;
   align-items: flex-end;
