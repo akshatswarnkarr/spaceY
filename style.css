@@ -39,10 +39,6 @@ a {
   display: flex;
   align-items: center;
 }
-.fa-bars {
-  margin: 5vmin;
-  cursor: pointer;
-}
 .heading {
   margin: 5vmin;
   letter-spacing: 1px;
@@ -57,15 +53,12 @@ a {
   margin: 4vmin;
   gap: 4vmin;
 }
-.main_content {
-  color: white;
-}
 .text-area {
   position: absolute;
-  bottom: 19vmin;
+  bottom: 10vmin;
   left: 10vmin;
-  height: 100px;
-  width: 350px;
+  height: auto;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -96,14 +89,13 @@ a {
 .fade {
   animation: fadeIn 2s 2s both;
 }
-.icon {
-  text-align: center;
-}
+
 .fa-chevron-down {
   font-weight: 100;
   font-size: 1.5rem;
   position: absolute;
   bottom: 20px;
+  left: 50%;
   animation: float 1s alternate ease-in-out infinite;
 }
 .sec_page {
@@ -124,7 +116,7 @@ a {
   left: 10vmin;
   bottom: 19vmin;
   height: 100px;
-  width: 500px;
+  width: auto;
   display: flex;
   flex-direction: column;
   gap: 2vmin;
@@ -134,9 +126,10 @@ a {
 .footer {
   display: flex;
   height: 100px;
+  width: 100vw;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 5vmin;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
 }
@@ -169,18 +162,24 @@ a {
     transform: translateY(-20px);
   }
 }
+
 /* Media Queries */
 
 @media (max-width: 767px) {
   .links a,
   .heading,
-  .rewatch {
-    font-size: 0.9rem;
+  .rewatch,
+  .footer,
+  .fa-chevron-down {
+    font-size: 0.8rem;
   }
   .rocket {
-    font-size: 36px;
+    font-size: 30px;
   }
   .recent {
-    font-size: 20px;
+    font-size: 18px;
+  }
+  .text-area {
+    bottom: 18vmin;
   }
 }
